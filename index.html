@@ -24,29 +24,57 @@
         <div class="texto">
           <h1>Taste a good coffee from Dominican Republic</h1>
           <p>
-            See how experienced developers solve problems in real-time. Watching
-            scripted tutorials is great, but understanding how developers think
-            is invaluable.
+            Savor the rich, smooth flavor of Dominican coffee, grown in the lush
+            volcanic soil. With hints of chocolate and nuts, it offers a
+            perfectly balanced and aromatic experience in every sip.
           </p>
         </div>
       </div>
       <div class="right-side">
         <div class="form-el">
-            <h2>
-                <span class="free-cup">Get a free cup of coffe everyday</span>, then
-                $5/mo.
-              </h2>
+          <h2>
+            <span class="free-cup">Get a free cup of coffe everyday</span>, then
+            $5/per cup.
+          </h2>
           <form action="">
-            
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="text" placeholder="Email Address" />
-            <input type="text" placeholder="Password" />
-            <button>Claim your free coffee</button>
+            <input type="text" id="name-el" placeholder="First Name" required />
+            <div class="error-message" id="error-message">
+              Es necesario rellenar toda la informacion
+            </div>
+
+            <input
+              type="text"
+              id="lastname-el"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              id="email-el"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="password"
+              id="password-el"
+              placeholder="Password"
+              required
+            />
+            <p id="password-error" class="password-error">
+              La contraseña debe cumplir con los siguientes requisitos:
+              <br />
+              Contener al menos una letra mayúscula (A-Z). <br />
+              Contener al menos una letra minúscula (a-z). <br />
+              Contener al menos un número (0-9). <br />
+              Contener al menos un carácter especial (por ejemplo, !, @, #, $,
+              %). <br />
+              Tener una longitud mínima de 8 caracteres.
+            </p>
+            <button id="claim-btn">Claim your free coffee</button>
+
             <p>
               By clicking the button, you are agreeing to our
               <a class="terms" href="#">Terms and Services</a>
-              
             </p>
           </form>
         </div>
