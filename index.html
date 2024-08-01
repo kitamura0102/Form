@@ -36,24 +36,23 @@
             <span class="free-cup">Get a free cup of coffe everyday</span>, then
             $5/per cup.
           </h2>
-          <form action="">
+          <form action="" id="formulario">
             <input type="text" id="name-el" placeholder="First Name" required />
-            <div class="error-message" id="error-message">
-              Es necesario rellenar toda la informacion
-            </div>
-
+            <p id="nombre">Your name must contains only letters</p>
             <input
               type="text"
               id="lastname-el"
               placeholder="Last Name"
               required
             />
+            <p id="apellido">Your last name must contains only letters</p>
             <input
               type="email"
               id="email-el"
               placeholder="Email Address"
               required
             />
+            <p id="email-error">Invalid email address!</p>
             <input
               type="password"
               id="password-el"
@@ -67,11 +66,12 @@
               Contener al menos una letra minúscula (a-z). <br />
               Contener al menos un número (0-9). <br />
               Contener al menos un carácter especial (por ejemplo, !, @, #, $,
-              %). <br />
-              Tener una longitud mínima de 8 caracteres.
+              %).
             </p>
             <button id="claim-btn">Claim your free coffee</button>
-
+            <div class="error-message" id="error-message">
+              Es necesario rellenar toda la informacion
+            </div>
             <p>
               By clicking the button, you are agreeing to our
               <a class="terms" href="#">Terms and Services</a>
